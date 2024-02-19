@@ -6,8 +6,6 @@ var RoomService = require("../services/RoomService")
 var db = require("../models");
 var roomService = new RoomService(db);
 var { checkIfAuthorized } = require("./authMiddlewares")
-
-
 /* GET rooms listing. */
 router.get('/:hotelId', async function(req, res, next) {
   const rooms =  await roomService.getHotelRooms(req.params.hotelId);
