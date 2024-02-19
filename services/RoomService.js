@@ -4,7 +4,9 @@ class RoomService {
     constructor(db) {
         this.client = db.sequelize;
         this.Room = db.Room;
+        this.User = db.User;
         this.Reservation = db.Reservation;
+        console.log(db);
     }
 
     async create(capacity, pricePerDay, hotelId) {

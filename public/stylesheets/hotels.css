@@ -4,3 +4,9 @@ a {
 .right {
     float: right;
 }
+a, button {
+    max-width: 150px!important;
+}
+.right {
+    float:right;
+}
